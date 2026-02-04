@@ -31,10 +31,10 @@ OUT_SUBMISSION = "submission_final_ensemble.csv"
 # ============================================================
 
 
-admission = pd.read_csv(r'C:\Users\Admin\Downloads\admission.csv', dtype={'MA_SO_SV': str})
-academic  = pd.read_csv(r'C:\Users\Admin\Downloads\academic_records.csv', dtype={'MA_SO_SV': str})
-test      = pd.read_csv(r'C:\Users\Admin\Downloads\test.csv', dtype={'MA_SO_SV': str})
-sample    = pd.read_csv(r'C:\Users\Admin\Downloads\sample_submission.csv', dtype={'MA_SO_SV': str})
+admission = pd.read_csv(r'\admission.csv', dtype={'MA_SO_SV': str})
+academic  = pd.read_csv(r'\academic_records.csv', dtype={'MA_SO_SV': str})
+test      = pd.read_csv(r'\test.csv', dtype={'MA_SO_SV': str})
+sample    = pd.read_csv(r'\sample_submission.csv', dtype={'MA_SO_SV': str})
 
 
 
@@ -191,3 +191,4 @@ academic_ext["PASS_RATIO"] = (
     academic_ext["lag1_TC_HOANTHANH"] /
     (academic_ext["lag1_TC_DANGKY"] + 1e-6)
 ).clip(0, 1.2)
+
